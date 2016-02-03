@@ -1,0 +1,28 @@
+{
+  "name": "address-book",
+  "version": "1.0.0",
+  "description": "stores and fetches addreses",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/DM87/address-book-project.git"
+  },
+  "keywords": [
+    "adresse",
+    "book"
+  ],
+  "author": "Dan McAuley DM87",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/DM87/address-book-project/issues"
+  },
+  "homepage": "https://github.com/DM87/address-book-project#readme",
+  "dependencies": {
+    "cli-table": "^0.3.1",
+    "inquirer": "^0.11.4",
+    "prompt": "^0.2.14"
+  }
+}
