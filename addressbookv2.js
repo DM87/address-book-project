@@ -34,8 +34,12 @@ function addPerson(locationIndex) {
         firstName : 'What is the first name?',
         lastName : 'What is the last name?',
         birthDay : 'Associated birth date?',
+        emailAddress: 'What is your email address',
+        phoneNumber: 'What is your phone number?'
     }
+
     
+        
     questionPrompter(0)
     var person = {}
     function questionPrompter(y) {
@@ -77,7 +81,7 @@ function searchPerson(){
               searchResults.push(choicesList)
         }
         }
-    if (searchResults.length > 0 ) {    
+    if (searchResults.length === 1 ) {    
     inquirer.prompt({name:'multipleResults', type:'list', message: 'Please select the appropriate contact.', choices:searchResults}, function(arrayTosend){
     displayPerson(dataBase[arrayTosend.multipleResults]);
     //next menu:
@@ -110,8 +114,13 @@ function displayPerson(personToDisplay){
     var headers = {
         firstName: 'First Name',
         lastName: 'Last Name',
-        birthDay: 'Birth Day'
+        birthDay: 'Birth Day',
+        emailAddress: 'Email',
+        phoneNumber: 'Phone number',
+        address: 'Address'
     };
+    
+    
     
     var lines = Object.keys(personToDisplay).map(function(key){
         var line = {};
